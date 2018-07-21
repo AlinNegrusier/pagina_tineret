@@ -1,21 +1,23 @@
 {
-"ID":"ACASA",
-"NOMBRE_WEB":"Acasa",
-"REDIRECCION":"~/Acasa"
+"ITEM1":{
+	"ID":"ACASA",
+	"NOMBRE_WEB":"Acasa",
+	"REDIRECCION":"~/Acasa"
 },
-{
-"ID":"DDConferinte",
-"NOMBRE_WEB":"Conferin?e",
-"REDIRECCION":"~/ListaArticole?a=c",
-"SUBNIVELES": [{
-		"ID": "CONFERINTE1",
-		"NOMBRE_wEB": "Conferin?a 2017",
-		"REDIRECCION": "~/Articole?id=1"
-		},
-		{
-		"ID": "CONFERINTE2",
-		"NOMBRE_wEB": "Conferin?a 2018",
-		"REDIRECCION": "~/Articole?id=2"		
-		}
-		]
+"ITEM2":{
+	"ID":"DDConferinte",
+	"NOMBRE_WEB":"Conferin?e",
+	"REDIRECCION":"~/ListaArticole?a=c",
+	"SUBNIVELES": [{
+			"ID": "CONFERINTE1",
+			"NOMBRE_wEB": "Conferin?a 2017",
+			"REDIRECCION": "~/Articole?id=1"
+			},
+			{
+			"ID": "CONFERINTE2",
+			"NOMBRE_wEB": "Conferin?a 2018",
+			"REDIRECCION": "~/Articole?id=2"		
+			}
+			]
+}
 }
