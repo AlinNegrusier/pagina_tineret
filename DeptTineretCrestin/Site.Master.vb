@@ -34,6 +34,18 @@ Public Class SiteMaster
                 End If
 
                 If hay_subniveles Then
+                    Dim li As HtmlGenericControl = Crear_Elemento("li",, "nav-item dropdown")
+                    Dim a As HtmlGenericControl = Crear_Elemento("a", atributos("ID"), "nav-link dropdown-toggle", atributos("REDIRECCION"))
+                    a.Attributes.Add("role", "button")
+                    a.Attributes.Add("data-toggle", "dropdown")
+                    a.Attributes.Add("aria-haspopup", "true")
+                    a.Attributes.Add("aria-expanded", "false")
+                    a.InnerText = atributos("NOMBRE_WEB")
+                    Dim div As HtmlGenericControl = Crear_Elemento("div",, "dropdown-menu")
+                    div.Attributes.Add("aria-labelledby", "navbarDropdown")
+
+
+                    li.Controls.Add(a)
 
                 Else
 
@@ -68,7 +80,7 @@ Public Class SiteMaster
         contenedor_items_menu.Controls.Add(div_buscar)
     End Sub
 
-    Function Crear_Elemento(ByVal tipo_control As String, Optional id As String = "", Optional clase As String = "") As HtmlGenericControl
+    Function Crear_Elemento(ByVal tipo_control As String, Optional id As String = "", Optional clase As String = "", Optional href As String = "") As HtmlGenericControl
         Dim NewControl As New HtmlGenericControl(tipo_control)
 
         If id <> "" Then
@@ -77,6 +89,10 @@ Public Class SiteMaster
 
         If clase <> "" Then
             NewControl.Attributes.Add("class", clase)
+        End If
+
+        If href <> "" Then
+            NewControl.Attributes.Add("href", href)
         End If
 
         Return NewControl
