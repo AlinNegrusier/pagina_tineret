@@ -23,11 +23,62 @@ Public Class SiteMaster
         rawresp = reader.ReadToEnd()
 
         Dim jResults As Object = JObject.Parse(rawresp)
-        Debug.Write(jResults("name"))
-        Debug.Write(jResults("name").ToString())
 
-        'TxtFornavn.Text = If(jResults("name") Is Nothing, "", jResults("name").ToString())
-        'TxtAdresse.Text = If(jResults("address") Is Nothing, "", jResults("address").ToString())
+        Dim ul As HtmlGenericControl = Crear_Elemento("ul",, "navbar-nav mr-auto")
 
+        For Each item_menu In jResults
+            For Each atributos In item_menu
+                Dim hay_subniveles As Boolean = False
+                If Not atributos("SUBNIVELES") Is Nothing Then
+                    hay_subniveles = True
+                End If
+
+                If hay_subniveles Then
+
+                Else
+
+                    Dim li As HtmlGenericControl = Crear_Elemento("li",, "nav-item")
+                    Dim a As HtmlGenericControl = Crear_Elemento("a",, "nav-link")
+                    a.Attributes.Add("href", atributos("REDIRECCION"))
+                    a.InnerText = atributos("NOMBRE_WEB")
+                    li.Controls.Add(a)
+                    ul.Controls.Add(li)
+                End If
+
+
+            Next
+        Next
+
+        contenedor_items_menu.Controls.Add(ul)
+
+        'CAJA BUSCAR
+        Dim div_buscar As HtmlGenericControl = Crear_Elemento("div",, "form-inline my-2 my-lg-0")
+        Dim input_buscar As HtmlGenericControl = Crear_Elemento("input",, "form-control mr-sm-2 expanding_input")
+        input_buscar.Attributes.Add("type", "search")
+        input_buscar.Attributes.Add("placeholder", "Caută un articol...")
+        input_buscar.Attributes.Add("aria-label", "Search")
+
+        Dim button_buscar As HtmlGenericControl = Crear_Elemento("Button",, "btn btn-outline-light my-2 my-sm-0")
+        button_buscar.Attributes.Add("type", "submit")
+        Dim icono_buscar As HtmlGenericControl = Crear_Elemento("i",, "fas fa-search")
+        button_buscar.Controls.Add(icono_buscar)
+
+        div_buscar.Controls.Add(input_buscar)
+        div_buscar.Controls.Add(button_buscar)
+        contenedor_items_menu.Controls.Add(div_buscar)
     End Sub
+
+    Function Crear_Elemento(ByVal tipo_control As String, Optional id As String = "", Optional clase As String = "") As HtmlGenericControl
+        Dim NewControl As New HtmlGenericControl(tipo_control)
+
+        If id <> "" Then
+            NewControl.ID = id
+        End If
+
+        If clase <> "" Then
+            NewControl.Attributes.Add("class", clase)
+        End If
+
+        Return NewControl
+    End Function
 End Class

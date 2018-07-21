@@ -74,7 +74,7 @@ textarea {
     .navbar-custom .dropdown-menu {
         background-color: #2b2e4a;
         border: 1px solid white;
-        box-shadow: 1px 10px 20px 2px #888888;
+        box-shadow: 1px 5px 10px 2px #1c1c1c;
     }
 
     .dropdown-menu .sub-menu {

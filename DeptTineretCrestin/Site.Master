@@ -52,50 +52,7 @@
       <i class="fas fa-bars blanco"></i>
   </button>
              <asp:Panel runat="server" class="collapse navbar-collapse" id="contenedor_items_menu">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="~/Acasa" >Acasă<span class="sr-only">(current)</span></a>
-      </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="~/ListaArticole?a=c" id="DDConferinte" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Conferințe
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="~/Articole?id=1">Conferință 2017</a>
-          <a class="dropdown-item" href="~/Articole?id=2">Conferință 2018</a>
-        </div>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="~/ListaArticole?a=t" id="DDTabere" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Tabere
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="~/Articole?id=3">Tabără 2017</a>
-          <a class="dropdown-item" href="~/Articole?id=4">Tabără 2018</a>
-        </div>
-      </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="~/ListaArticole?a=t" id="DDProiecte" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Proiecte
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="~/Articole?id=5">Proiectul Ana</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="~/Contact">Contact</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="~/Despre">Despre noi</a>
-      </li>
-    </ul>
-    <div class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2 expanding_input" type="search" placeholder="Caută un articol..." aria-label="Search">
-      <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-        
-    </div>
   </asp:Panel>
 
  <%-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
