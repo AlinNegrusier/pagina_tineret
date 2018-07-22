@@ -8,7 +8,7 @@ Public Class SiteMaster
 
     End Sub
 
-    Private Sub contenedor_items_menu_Init(sender As Object, e As EventArgs) Handles contenedor_items_menu.Init
+    Private Sub contenedor_items_menu_Init(sender As Object, e As EventArgs) Handles navbarSupportedContent.Init
 
         Dim request As HttpWebRequest
         Dim response As HttpWebResponse = Nothing
@@ -45,7 +45,16 @@ Public Class SiteMaster
                     div.Attributes.Add("aria-labelledby", "navbarDropdown")
 
                     For Each subitem In atributos("SUBNIVELES")
-                        Dim a_subitem As HtmlGenericControl = Crear_Elemento("a",, "dropdown-item", subitem("REDIRECCION"))
+                        Dim a_subitem As HtmlGenericControl
+                        Dim url As String = HttpContext.Current.Request.Url.AbsoluteUri
+
+                        If url.ToUpper.Contains(subitem("REDIRECCION").ToString.ToUpper) Then
+                            a_subitem = Crear_Elemento("a",, "dropdown-item active", subitem("REDIRECCION"))
+                            li.Attributes.Add("class", "nav-item dropdown active")
+                        Else
+                            a_subitem = Crear_Elemento("a",, "dropdown-item", subitem("REDIRECCION"))
+                        End If
+
                         a_subitem.InnerText = subitem("NOMBRE_WEB")
                         div.Controls.Add(a_subitem)
                     Next
@@ -54,8 +63,15 @@ Public Class SiteMaster
                     li.Controls.Add(div)
                     ul.Controls.Add(li)
                 Else
+                    Dim url As String = HttpContext.Current.Request.Url.AbsoluteUri
+                    Dim li As HtmlGenericControl
+                    If url.ToUpper.Contains(atributos("REDIRECCION").ToString.ToUpper) Then
+                        li = Crear_Elemento("li",, "nav-item active")
+                    Else
+                        li = Crear_Elemento("li",, "nav-item")
+                    End If
 
-                    Dim li As HtmlGenericControl = Crear_Elemento("li",, "nav-item")
+                    'Dim li As HtmlGenericControl = Crear_Elemento("li",, "nav-item")
                     Dim a As HtmlGenericControl = Crear_Elemento("a",, "nav-link")
                     a.Attributes.Add("href", atributos("REDIRECCION"))
                     a.InnerText = atributos("NOMBRE_WEB")
@@ -67,7 +83,7 @@ Public Class SiteMaster
             Next
         Next
 
-        contenedor_items_menu.Controls.Add(ul)
+        navbarSupportedContent.Controls.Add(ul)
 
         'CAJA BUSCAR
         Dim div_buscar As HtmlGenericControl = Crear_Elemento("div",, "form-inline my-2 my-lg-0")
@@ -83,7 +99,7 @@ Public Class SiteMaster
 
         div_buscar.Controls.Add(input_buscar)
         div_buscar.Controls.Add(button_buscar)
-        contenedor_items_menu.Controls.Add(div_buscar)
+        navbarSupportedContent.Controls.Add(div_buscar)
     End Sub
 
     Function Crear_Elemento(ByVal tipo_control As String, Optional id As String = "", Optional clase As String = "", Optional href As String = "") As HtmlGenericControl

@@ -174,3 +174,7 @@ footer {
     color: white;
     padding: 10px;
 }
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #903749 !important;
+}

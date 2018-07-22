@@ -156,7 +156,6 @@
     <Content Include="Content\fontawesome.css" />
     <Content Include="Despre.aspx" />
     <Content Include="Img\logo.png" />
-    <Content Include="ListaArticole.aspx" />
     <Content Include="Scripts\About.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
@@ -226,13 +225,6 @@
     </Compile>
     <Compile Include="Despre.aspx.vb">
       <DependentUpon>Despre.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="ListaArticole.aspx.designer.vb">
-      <DependentUpon>ListaArticole.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ListaArticole.aspx.vb">
-      <DependentUpon>ListaArticole.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Scripts\About.aspx.designer.vb">

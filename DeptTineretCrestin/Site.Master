@@ -43,7 +43,7 @@
 
 
         <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-            <a class="navbar-brand" href="~/Acasa">
+            <a class="navbar-brand" href="Acasa">
                 <img src="Img/logo.png" width="80" height="35" alt="Logo">
               </a>
 
@@ -51,7 +51,7 @@
     <!--<span class="navbar-toggler-icon"></span>-->
       <i class="fas fa-bars blanco"></i>
   </button>
-             <asp:Panel runat="server" class="collapse navbar-collapse" id="contenedor_items_menu">
+             <asp:Panel runat="server" class="collapse navbar-collapse" id="navbarSupportedContent">
 
   </asp:Panel>
 
