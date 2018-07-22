@@ -2,59 +2,59 @@
 "ITEM1":{
 	"ID":"ACASA",
 	"NOMBRE_WEB":"Acasă",
-	"REDIRECCION":"/Acasa"
+	"REDIRECCION":"Acasa"
 },
 "ITEM2":{
 	"ID":"DDConferinte",
 	"NOMBRE_WEB":"Conferințe",
-	"REDIRECCION":"/ListaArticole?a=c",
+	"REDIRECCION":"ListaArticole?a=c",
 	"SUBNIVELES": [{
 			"ID": "CONFERINTE1",
 			"NOMBRE_WEB": "Conferința 2017",
-			"REDIRECCION": "/Articole?id=1"
+			"REDIRECCION": "Articole?id=1"
 			},
 			{
 			"ID": "CONFERINTE2",
 			"NOMBRE_WEB": "Conferința 2018",
-			"REDIRECCION": "/Articole?id=2"		
+			"REDIRECCION": "Articole?id=2"		
 			}
 			]
 },
 "ITEM3":{
 	"ID":"DDTabere",
 	"NOMBRE_WEB":"Tabere",
-	"REDIRECCION":"/ListaArticole?a=t",
+	"REDIRECCION":"ListaArticole?a=t",
 	"SUBNIVELES": [{
 			"ID": "TABERE1",
 			"NOMBRE_WEB": "Tabără 2017",
-			"REDIRECCION": "/Articole?id=3"
+			"REDIRECCION": "Articole?id=3"
 			},
 			{
 			"ID": "TABERE2",
 			"NOMBRE_WEB": "Tabără 2018",
-			"REDIRECCION": "/Articole?id=4"		
+			"REDIRECCION": "Articole?id=4"		
 			}
 			]
 },
 "ITEM4":{
 	"ID":"DDProiecte",
 	"NOMBRE_WEB":"Proiecte",
-	"REDIRECCION":"~/ListaArticole?a=p",
+	"REDIRECCION":"ListaArticole?a=p",
 	"SUBNIVELES": [{
 			"ID": "PROIECTE1",
 			"NOMBRE_WEB": "Proiectul Ana",
-			"REDIRECCION": "/Articole?id=5"
+			"REDIRECCION": "Articole?id=5"
 			}
 			]
 },
 "ITEM5":{
 	"ID":"CONTACT",
 	"NOMBRE_WEB":"Contact",
-	"REDIRECCION":"/Contact"
+	"REDIRECCION":"Contact"
 },
 "ITEM6":{
 	"ID":"DESPRE",
 	"NOMBRE_WEB":"Despre noi",
-	"REDIRECCION":"/Despre"
+	"REDIRECCION":"Despre"
 }
 }
