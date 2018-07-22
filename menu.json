@@ -6,7 +6,7 @@
 },
 "ITEM2":{
 	"ID":"DDConferinte",
-	"NOMBRE_WEB":"Conferin?e",
+	"NOMBRE_WEB":"Conferințe",
 	"REDIRECCION":"~/ListaArticole?a=c",
 	"SUBNIVELES": [{
 			"ID": "CONFERINTE1",
@@ -15,7 +15,7 @@
 			},
 			{
 			"ID": "CONFERINTE2",
-			"NOMBRE_WºEB": "Conferința 2018",
+			"NOMBRE_WEB": "Conferința 2018",
 			"REDIRECCION": "~/Articole?id=2"		
 			}
 			]

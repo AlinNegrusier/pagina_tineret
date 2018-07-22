@@ -44,9 +44,15 @@ Public Class SiteMaster
                     Dim div As HtmlGenericControl = Crear_Elemento("div",, "dropdown-menu")
                     div.Attributes.Add("aria-labelledby", "navbarDropdown")
 
+                    For Each subitem In atributos("SUBNIVELES")
+                        Dim a_subitem As HtmlGenericControl = Crear_Elemento("a",, "dropdown-item", subitem("REDIRECCION"))
+                        a_subitem.InnerText = subitem("NOMBRE_WEB")
+                        div.Controls.Add(a_subitem)
+                    Next
 
                     li.Controls.Add(a)
-
+                    li.Controls.Add(div)
+                    ul.Controls.Add(li)
                 Else
 
                     Dim li As HtmlGenericControl = Crear_Elemento("li",, "nav-item")
