@@ -20,6 +20,33 @@
 			}
 			]
 },
+"ITEM3":{
+	"ID":"DDTabere",
+	"NOMBRE_WEB":"Tabere",
+	"REDIRECCION":"~/ListaArticole?a=t",
+	"SUBNIVELES": [{
+			"ID": "TABERE1",
+			"NOMBRE_WEB": "Tabără 2017",
+			"REDIRECCION": "~/Articole?id=3"
+			},
+			{
+			"ID": "TABERE2",
+			"NOMBRE_WEB": "Tabără 2018",
+			"REDIRECCION": "~/Articole?id=4"		
+			}
+			]
+},
+"ITEM4":{
+	"ID":"DDProiecte",
+	"NOMBRE_WEB":"Proiecte",
+	"REDIRECCION":"~/ListaArticole?a=p",
+	"SUBNIVELES": [{
+			"ID": "PROIECTE1",
+			"NOMBRE_WEB": "Proiectul Ana",
+			"REDIRECCION": "~/Articole?id=5"
+			}
+			]
+},
 "ITEM5":{
 	"ID":"CONTACT",
 	"NOMBRE_WEB":"Contact",
