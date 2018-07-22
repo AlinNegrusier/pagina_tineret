@@ -151,8 +151,12 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Acasa.aspx" />
+    <Content Include="Articole.aspx" />
     <Content Include="Content\fontawesome.css" />
+    <Content Include="Despre.aspx" />
     <Content Include="Img\logo.png" />
+    <Content Include="ListaArticole.aspx" />
     <Content Include="Scripts\About.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
@@ -201,8 +205,36 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acasa.aspx.designer.vb">
+      <DependentUpon>Acasa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Acasa.aspx.vb">
+      <DependentUpon>Acasa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Articole.aspx.designer.vb">
+      <DependentUpon>Articole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articole.aspx.vb">
+      <DependentUpon>Articole.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Despre.aspx.designer.vb">
+      <DependentUpon>Despre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Despre.aspx.vb">
+      <DependentUpon>Despre.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ListaArticole.aspx.designer.vb">
+      <DependentUpon>ListaArticole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaArticole.aspx.vb">
+      <DependentUpon>ListaArticole.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Scripts\About.aspx.designer.vb">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
