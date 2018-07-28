@@ -18,6 +18,7 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="Scripts/modernizr.js"></script>
 </head>
 <body>
     <form runat="server">
@@ -119,6 +120,9 @@
 
     </form>
     <script src="Scripts/bootstrap.js"></script>
-    <script src="Scripts/jquery-1.10.2.js"></script>
+    <!--<script src="Scripts/jquery-1.10.2.js"></script>-->
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="Scripts/jquery.mobile.custom.min.js"></script>
+    <script src="Scripts/main.js"></script>
 </body>
 </html>
