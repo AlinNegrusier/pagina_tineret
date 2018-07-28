@@ -4,9 +4,6 @@ Imports Newtonsoft.Json.Linq
 
 Public Class SiteMaster
     Inherits MasterPage
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
-
-    End Sub
 
     Private Sub contenedor_items_menu_Init(sender As Object, e As EventArgs) Handles navbarSupportedContent.Init
 

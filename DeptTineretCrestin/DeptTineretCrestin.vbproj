@@ -158,6 +158,7 @@
     <Content Include="Img\cd-arrow.svg" />
     <Content Include="Img\fondo_editado.jpg" />
     <Content Include="Img\fondo_editado_morado.jpg" />
+    <Content Include="Img\loading.gif" />
     <Content Include="Img\logo.png" />
     <Content Include="Img\quote.png" />
     <Content Include="Contact.aspx" />
@@ -228,6 +229,7 @@
       <DependentUpon>Articole.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Clases\articulo.vb" />
     <Compile Include="Despre.aspx.designer.vb">
       <DependentUpon>Despre.aspx</DependentUpon>
     </Compile>

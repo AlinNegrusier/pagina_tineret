@@ -27,11 +27,21 @@
                 <h1 class="titlu">Ultimele Evenimente</h1>
             </div>
         </div>
+
+         <div class="row d-sm-none">
+            <div class="box-flex fullheight fullwidth"> 
+                <h6 class="titlu">(Glisați spre stânga sau dreapta)</h6>
+            </div>
+        </div>
         
 <section class="cd-horizontal-timeline">
 	<div class="timeline">
 		<div class="events-wrapper">
-			<div class="events">
+            <asp:Panel ID="lista_eventos_barra" runat="server" CssClass="events">
+				
+
+			</asp:Panel>
+			<%--<div class="events">
 				<ol>
 					<li><a href="#0" data-date="16/01/2014">16 Jan</a></li>
 					<li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
@@ -42,7 +52,8 @@
 				</ol>
 
 				<span class="filling-line" aria-hidden="true"></span>
-			</div> <!-- .events -->
+			</div>--%> 
+            <!-- .events -->
 		</div> <!-- .events-wrapper -->
 			
 		<ul class="cd-timeline-navigation">
@@ -51,7 +62,12 @@
 		</ul> <!-- .cd-timeline-navigation -->
 	</div> <!-- .timeline -->
 
-	<div class="events-content">
+    <asp:Panel runat="server" CssClass="events-content" ID="contenido_eventos">
+
+
+    </asp:Panel>
+
+	<%--<div class="events-content">
 		<ol>
 			<li data-date="16/01/2014">
 				<h2>Horizontal Timeline</h2>
@@ -95,10 +111,12 @@
 
 			
 		</ol>
-	</div> <!-- .events-content -->
+	</div> --%>
+    
+    <!-- .events-content -->
 </section>
 	
-
+        
     </div>
 
     

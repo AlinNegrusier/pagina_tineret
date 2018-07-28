@@ -780,3 +780,21 @@ Main Components
         background-repeat: no-repeat;
     }
 }
+.boton_leer_mas {
+    width: 150px;
+}
+.btn-outline-morado {
+    color: #903749;
+    background-color: transparent;
+    background-image: none;
+    border-color: #903749 !important;
+}
+    .btn-outline-morado:hover {
+        color: #fff;
+        background-color: #903749;
+        border-color: #903749;
+    }
+.modal-header {
+    background-color: #2b2e4a !important;
+    color: white;
+}

@@ -19,6 +19,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="Scripts/modernizr.js"></script>
+    <script>
+
+        //$('document').ready(function () {
+        //    mostrarModalCargando();
+        //});
+
+        //function mostrarModalCargando() {
+        //    $('#ModalCargando').modal('show');
+        //}
+        
+
+    </script>
 </head>
 <body>
     <form runat="server">
@@ -119,7 +131,30 @@
             </footer>
 
     </form>
-    <script src="Scripts/bootstrap.js"></script>
+
+    <div class="modal fade" id="ModalCargando">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Se încarcă</h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="row">
+            <div class='box-flex fullheight fullwidth d-block text-center'> 
+                <img width="350" height="200" src="Img/loading.gif" />
+                </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+     <script src="Scripts/bootstrap.js"></script>
     <!--<script src="Scripts/jquery-1.10.2.js"></script>-->
     <script src="Scripts/jquery-2.1.4.js"></script>
     <script src="Scripts/jquery.mobile.custom.min.js"></script>
