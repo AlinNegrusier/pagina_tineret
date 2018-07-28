@@ -155,7 +155,10 @@
     <Content Include="Articole.aspx" />
     <Content Include="Content\fontawesome.css" />
     <Content Include="Despre.aspx" />
+    <Content Include="Img\fondo_editado.jpg" />
+    <Content Include="Img\fondo_editado_morado.jpg" />
     <Content Include="Img\logo.png" />
+    <Content Include="Img\quote.png" />
     <Content Include="Scripts\About.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />

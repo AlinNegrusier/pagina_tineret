@@ -24,6 +24,11 @@ Public Class SiteMaster
 
         Dim jResults As Object = JObject.Parse(rawresp)
 
+        Dim url As String = HttpContext.Current.Request.Url.AbsoluteUri
+        If url.ToUpper.Contains("ACASA") Then
+            contenedor_principal.CssClass = "content-flex"
+        End If
+
         Dim ul As HtmlGenericControl = Crear_Elemento("ul",, "navbar-nav mr-auto")
 
         For Each item_menu In jResults
@@ -46,7 +51,7 @@ Public Class SiteMaster
 
                     For Each subitem In atributos("SUBNIVELES")
                         Dim a_subitem As HtmlGenericControl
-                        Dim url As String = HttpContext.Current.Request.Url.AbsoluteUri
+
 
                         If url.ToUpper.Contains(subitem("REDIRECCION").ToString.ToUpper) Then
                             a_subitem = Crear_Elemento("a",, "dropdown-item active", subitem("REDIRECCION"))
@@ -63,7 +68,6 @@ Public Class SiteMaster
                     li.Controls.Add(div)
                     ul.Controls.Add(li)
                 Else
-                    Dim url As String = HttpContext.Current.Request.Url.AbsoluteUri
                     Dim li As HtmlGenericControl
                     If url.ToUpper.Contains(atributos("REDIRECCION").ToString.ToUpper) Then
                         li = Crear_Elemento("li",, "nav-item active")
