@@ -765,10 +765,18 @@ Main Components
     color: #903749;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1300px) and (max-width: 1400px) {
     .cajaTimeline {
         background-image: url(../Img/reloj.jpg);
         background-position: -50% -200px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1400px) {
+    .cajaTimeline {
+        background-image: url(../Img/reloj.jpg);
+        background-position: -40% -200px;
         background-repeat: no-repeat;
     }
 }

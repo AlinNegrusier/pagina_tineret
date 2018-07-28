@@ -1,60 +1,42 @@
 {
-"ITEM1":{
-	"ID":"ACASA",
-	"NOMBRE_WEB":"Acasă",
-	"REDIRECCION":"Acasa"
-},
-"ITEM2":{
-	"ID":"DDConferinte",
-	"NOMBRE_WEB":"Conferințe",
-	"REDIRECCION":"ListaArticole?a=c",
-	"SUBNIVELES": [{
-			"ID": "CONFERINTE1",
-			"NOMBRE_WEB": "Conferința 2017",
-			"REDIRECCION": "Articole?id=1"
-			},
-			{
-			"ID": "CONFERINTE2",
-			"NOMBRE_WEB": "Conferința 2018",
-			"REDIRECCION": "Articole?id=2"		
-			}
-			]
-},
-"ITEM3":{
-	"ID":"DDTabere",
-	"NOMBRE_WEB":"Tabere",
-	"REDIRECCION":"ListaArticole?a=t",
-	"SUBNIVELES": [{
-			"ID": "TABERE1",
-			"NOMBRE_WEB": "Tabără 2017",
-			"REDIRECCION": "Articole?id=3"
-			},
-			{
-			"ID": "TABERE2",
-			"NOMBRE_WEB": "Tabără 2018",
-			"REDIRECCION": "Articole?id=4"		
-			}
-			]
-},
-"ITEM4":{
-	"ID":"DDProiecte",
-	"NOMBRE_WEB":"Proiecte",
-	"REDIRECCION":"ListaArticole?a=p",
-	"SUBNIVELES": [{
-			"ID": "PROIECTE1",
-			"NOMBRE_WEB": "Proiectul Ana",
-			"REDIRECCION": "Articole?id=5"
-			}
-			]
-},
-"ITEM5":{
-	"ID":"CONTACT",
-	"NOMBRE_WEB":"Contact",
-	"REDIRECCION":"Contact"
-},
-"ITEM6":{
-	"ID":"DESPRE",
-	"NOMBRE_WEB":"Despre noi",
-	"REDIRECCION":"Despre"
+"ARTICOL1":{
+	"ID":"1",
+	"TITULO":"Conferință 2017",
+	"DESCRIPCION":"ARTICOL1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan, neque sed ultricies venenatis, orci ante iaculis turpis, pharetra tincidunt lacus ante eu velit. <br> Maecenas consectetur, quam ut dictum pretium, erat urna feugiat augue, vel convallis erat neque vel neque. Nulla pellentesque ex metus, nec dignissim turpis elementum <b> non </b>.",
+	"CONTENIDO": "<p>ARTICOL 1 CONTINUT -</p><p>&nbsp; &nbsp; &nbsp;Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan, neque sed ultricies venenatis, orci ante iaculis turpis, pharetra tincidunt lacus ante eu velit. Maecenas consectetur, quam ut dictum pretium, erat urna feugiat augue, vel convallis erat neque vel neque. Nulla pellentesque ex metus, nec dignissim turpis elementum non. Integer sagittis leo quis sapien rutrum, id rhoncus arcu mollis. Donec sit amet tempus est. Donec ut tellus pretium leo elementum placerat eu sed sem. Phasellus efficitur lacinia magna, id malesuada ipsum consequat nec. Aenean semper metus sed sapien bibendum posuere. Vivamus eu mi ac lacus vestibulum fringilla. Sed semper rutrum mollis. Nulla quis viverra felis, sit amet blandit felis. Donec eu suscipit odio, vitae hendrerit ligula. Nam sit amet felis hendrerit, elementum tortor non, faucibus nisi. Pellentesque rhoncus erat ut molestie luctus. Sed et nisl in justo ullamcorper consequat. Nam ultrices quam nulla, et finibus elit tincidunt eu.</p><ul><li>Item1</li><li>Item2</li><li>Item3</li></ul><p>&nbsp;</p><p><img style='display: block; margin-left: auto; margin-right: auto;' src='https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361514_960_720.png' alt='' width='250' height='250' /></p>",
+	"FECHA": "10/07/2017",
+	"TIPO_ARTICULO": "CONFERINTA"
+},   
+"ARTICOL2":{
+	"ID":"2",
+	"TITULO":"Conferință 2018",
+	"DESCRIPCION":"ARTICOL2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan, neque sed ultricies venenatis, orci ante iaculis turpis, pharetra tincidunt lacus ante eu velit. <br> Maecenas consectetur, quam ut dictum pretium, erat urna feugiat augue, vel convallis erat neque vel neque. Nulla pellentesque ex metus, nec dignissim turpis elementum <b> non </b>.",
+	"CONTENIDO": "<p>ARTICOL 2 CONTINUT -</p><p>&nbsp; &nbsp; &nbsp;Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan, neque sed ultricies venenatis, orci ante iaculis turpis, pharetra tincidunt lacus ante eu velit. Maecenas consectetur, quam ut dictum pretium, erat urna feugiat augue, vel convallis erat neque vel neque. Nulla pellentesque ex metus, nec dignissim turpis elementum non. Integer sagittis leo quis sapien rutrum, id rhoncus arcu mollis. Donec sit amet tempus est. Donec ut tellus pretium leo elementum placerat eu sed sem. Phasellus efficitur lacinia magna, id malesuada ipsum consequat nec. Aenean semper metus sed sapien bibendum posuere. Vivamus eu mi ac lacus vestibulum fringilla. Sed semper rutrum mollis. Nulla quis viverra felis, sit amet blandit felis. Donec eu suscipit odio, vitae hendrerit ligula. Nam sit amet felis hendrerit, elementum tortor non, faucibus nisi. Pellentesque rhoncus erat ut molestie luctus. Sed et nisl in justo ullamcorper consequat. Nam ultrices quam nulla, et finibus elit tincidunt eu.</p><ul><li>Item1</li><li>Item2</li><li>Item3</li></ul><p>&nbsp;</p><p><img style='display: block; margin-left: auto; margin-right: auto;' src='https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361514_960_720.png' alt='' width='250' height='250' /></p>",
+	"FECHA": "04/06/2018",
+	"TIPO_ARTICULO": "CONFERINTA"
+},   
+"ARTICOL3":{
+	"ID":"3",
+	"TITULO":"Tabără 2017",
+	"DESCRIPCION":"ARTICOL3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan, neque sed ultricies venenatis, orci ante iaculis turpis, pharetra tincidunt lacus ante eu velit. <br> Maecenas consectetur, quam ut dictum pretium, erat urna feugiat augue, vel convallis erat neque vel neque. Nulla pellentesque ex metus, nec dignissim turpis elementum <b> non </b>.",
+	"CONTENIDO": "<p>ARTICOL 3 CONTINUT -</p><p>&nbsp; &nbsp; &nbsp;Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan, neque sed ultricies venenatis, orci ante iaculis turpis, pharetra tincidunt lacus ante eu velit. Maecenas consectetur, quam ut dictum pretium, erat urna feugiat augue, vel convallis erat neque vel neque. Nulla pellentesque ex metus, nec dignissim turpis elementum non. Integer sagittis leo quis sapien rutrum, id rhoncus arcu mollis. Donec sit amet tempus est. Donec ut tellus pretium leo elementum placerat eu sed sem. Phasellus efficitur lacinia magna, id malesuada ipsum consequat nec. Aenean semper metus sed sapien bibendum posuere. Vivamus eu mi ac lacus vestibulum fringilla. Sed semper rutrum mollis. Nulla quis viverra felis, sit amet blandit felis. Donec eu suscipit odio, vitae hendrerit ligula. Nam sit amet felis hendrerit, elementum tortor non, faucibus nisi. Pellentesque rhoncus erat ut molestie luctus. Sed et nisl in justo ullamcorper consequat. Nam ultrices quam nulla, et finibus elit tincidunt eu.</p><ul><li>Item1</li><li>Item2</li><li>Item3</li></ul><p>&nbsp;</p><p><img style='display: block; margin-left: auto; margin-right: auto;' src='https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361514_960_720.png' alt='' width='250' height='250' /></p>",
+	"FECHA": "01/06/2017",
+	"TIPO_ARTICULO": "TABARA"
+},   
+"ARTICOL4":{
+	"ID":"4",
+	"TITULO":"Tabără 2018",
+	"DESCRIPCION":"ARTICOL4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan, neque sed ultricies venenatis, orci ante iaculis turpis, pharetra tincidunt lacus ante eu velit. <br> Maecenas consectetur, quam ut dictum pretium, erat urna feugiat augue, vel convallis erat neque vel neque. Nulla pellentesque ex metus, nec dignissim turpis elementum <b> non </b>.",
+	"CONTENIDO": "<p>ARTICOL 4 CONTINUT -</p><p>&nbsp; &nbsp; &nbsp;Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan, neque sed ultricies venenatis, orci ante iaculis turpis, pharetra tincidunt lacus ante eu velit. Maecenas consectetur, quam ut dictum pretium, erat urna feugiat augue, vel convallis erat neque vel neque. Nulla pellentesque ex metus, nec dignissim turpis elementum non. Integer sagittis leo quis sapien rutrum, id rhoncus arcu mollis. Donec sit amet tempus est. Donec ut tellus pretium leo elementum placerat eu sed sem. Phasellus efficitur lacinia magna, id malesuada ipsum consequat nec. Aenean semper metus sed sapien bibendum posuere. Vivamus eu mi ac lacus vestibulum fringilla. Sed semper rutrum mollis. Nulla quis viverra felis, sit amet blandit felis. Donec eu suscipit odio, vitae hendrerit ligula. Nam sit amet felis hendrerit, elementum tortor non, faucibus nisi. Pellentesque rhoncus erat ut molestie luctus. Sed et nisl in justo ullamcorper consequat. Nam ultrices quam nulla, et finibus elit tincidunt eu.</p><ul><li>Item1</li><li>Item2</li><li>Item3</li></ul><p>&nbsp;</p><p><img style='display: block; margin-left: auto; margin-right: auto;' src='https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361514_960_720.png' alt='' width='250' height='250' /></p>",
+	"FECHA": "01/06/2018",
+	"TIPO_ARTICULO": "TABARA"
+},   
+"ARTICOL5":{
+	"ID":"5",
+	"TITULO":"Proiectul Ana",
+	"DESCRIPCION":"ARTICOL5 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan, neque sed ultricies venenatis, orci ante iaculis turpis, pharetra tincidunt lacus ante eu velit. <br> Maecenas consectetur, quam ut dictum pretium, erat urna feugiat augue, vel convallis erat neque vel neque. Nulla pellentesque ex metus, nec dignissim turpis elementum <b> non </b>.",
+	"CONTENIDO": "<p>ARTICOL 5 CONTINUT -</p><p>&nbsp; &nbsp; &nbsp;Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan, neque sed ultricies venenatis, orci ante iaculis turpis, pharetra tincidunt lacus ante eu velit. Maecenas consectetur, quam ut dictum pretium, erat urna feugiat augue, vel convallis erat neque vel neque. Nulla pellentesque ex metus, nec dignissim turpis elementum non. Integer sagittis leo quis sapien rutrum, id rhoncus arcu mollis. Donec sit amet tempus est. Donec ut tellus pretium leo elementum placerat eu sed sem. Phasellus efficitur lacinia magna, id malesuada ipsum consequat nec. Aenean semper metus sed sapien bibendum posuere. Vivamus eu mi ac lacus vestibulum fringilla. Sed semper rutrum mollis. Nulla quis viverra felis, sit amet blandit felis. Donec eu suscipit odio, vitae hendrerit ligula. Nam sit amet felis hendrerit, elementum tortor non, faucibus nisi. Pellentesque rhoncus erat ut molestie luctus. Sed et nisl in justo ullamcorper consequat. Nam ultrices quam nulla, et finibus elit tincidunt eu.</p><ul><li>Item1</li><li>Item2</li><li>Item3</li></ul><p>&nbsp;</p><p><img style='display: block; margin-left: auto; margin-right: auto;' src='https://cdn.pixabay.com/photo/2014/06/03/19/38/road-sign-361514_960_720.png' alt='' width='250' height='250' /></p>",
+	"FECHA": "12/03/2015",
+	"TIPO_ARTICULO": "PROIECT"
 }
 }
