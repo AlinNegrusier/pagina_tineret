@@ -3,7 +3,7 @@
     <div class="box-flex verset fullheight">
         <div class="row">
             <div class="col justify-content-center">
-                <h2><b><i>"…V-am scris, tinerilor, fiindcă sunteţi tari şi Cuvântul lui Dumnezeu rămâne în voi şi aţi biruit pe cel rău.”</i></b></h2>
+                <h2><i>"…V-am scris, tinerilor, fiindcă sunteţi tari şi Cuvântul lui Dumnezeu rămâne în voi şi aţi biruit pe cel rău.”</i></h2>
             </div>
             </div>
         

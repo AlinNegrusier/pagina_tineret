@@ -78,7 +78,7 @@ textarea {
     .navbar-custom .dropdown-menu {
         background-color: #2b2e4a;
         border: 1px solid white;
-        box-shadow: 1px 5px 10px 2px #1c1c1c;
+        box-shadow: 1px 5px 15px 2px #1c1c1c;
     }
 
     .dropdown-menu .sub-menu {
@@ -765,10 +765,19 @@ Main Components
     color: #903749;
 }
 
-@media (min-width: 1300px) and (max-width: 1400px) {
+
+@media (min-width: 1110px) and (max-width: 1185px) {
     .cajaTimeline {
         background-image: url(../Img/reloj.jpg);
-        background-position: -50% -200px;
+        background-position: -85% -200px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1185px) and (max-width: 1400px) {
+    .cajaTimeline {
+        background-image: url(../Img/reloj.jpg);
+        background-position: -68% -200px;
         background-repeat: no-repeat;
     }
 }
@@ -776,7 +785,7 @@ Main Components
 @media (min-width: 1400px) {
     .cajaTimeline {
         background-image: url(../Img/reloj.jpg);
-        background-position: -40% -200px;
+        background-position: -50% -200px;
         background-repeat: no-repeat;
     }
 }
@@ -897,4 +906,48 @@ Main Components
 }
 .menu_transparente{
     opacity: .9;
+}
+
+/*ESTILOS ARTICULOS*/
+
+.subtitlu {
+    color: #aaa;
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 0px !important;
+}
+.descriptie_subtitlu{
+    font-weight: 600;
+}
+.continut_articol{
+    font-size: 1rem;
+    color: black;
+}
+
+/* YouTube Responsive CSS */
+
+.video_responsive {
+    position: relative;
+    /*    padding-bottom: 56.25%;*/
+    padding-bottom: 40.25%;
+    /*padding-top: 25px;*/
+}
+
+.video_responsive iframe {
+        position: absolute;
+        width: 100% !important;
+        height: 100% !important;
+}
+.cabecera_articulo {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    max-width: 600px;
+}
+@media screen and (max-width: 768px) {
+    .cabecera_articulo {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
 }
