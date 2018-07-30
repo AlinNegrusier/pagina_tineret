@@ -39,4 +39,13 @@ Partial Public Class Articole
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Data_Redactarii As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control continut_articol.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents continut_articol As Global.System.Web.UI.WebControls.Literal
 End Class

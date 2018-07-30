@@ -4,5 +4,7 @@
     Public DESCRIPCION As String
     Public CONTENIDO As String
     Public FECHA As Date
+    Public FECHA_REDACCION As Date
+    Public AUTOR As String
     Public TIPO_ARTICULO As String
 End Class
