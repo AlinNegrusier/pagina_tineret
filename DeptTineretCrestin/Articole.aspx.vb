@@ -50,6 +50,16 @@ Public Class Articole
         Me.Data_Redactarii.Text = articulo.FECHA_REDACCION
         Me.continut_articol.Text = articulo.CONTENIDO
 
+        If articulo.TITULO Is Nothing Then
+            Me.panel_distribuie.Visible = False
+            Me.panel_subtitlu.Visible = False
+            Me.panel_sin_datos.Visible = True
+            Me.mesaj_sfarsit.Text = ""
+        Else
+            Me.panel_distribuie.Visible = True
+            Me.panel_subtitlu.Visible = True
+            Me.panel_sin_datos.Visible = False
+        End If
 
     End Sub
 

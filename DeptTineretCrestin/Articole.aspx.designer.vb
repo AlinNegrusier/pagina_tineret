@@ -23,6 +23,15 @@ Partial Public Class Articole
     Protected WithEvents titulo_articulo As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''Control panel_subtitlu.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents panel_subtitlu As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
     '''Control Autor.
     '''</summary>
     '''<remarks>
@@ -41,6 +50,24 @@ Partial Public Class Articole
     Protected WithEvents Data_Redactarii As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''Control panel_sin_datos.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents panel_sin_datos As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''Control Label1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Control continut_articol.
     '''</summary>
     '''<remarks>
@@ -48,4 +75,22 @@ Partial Public Class Articole
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents continut_articol As Global.System.Web.UI.WebControls.Literal
+    
+    '''<summary>
+    '''Control panel_distribuie.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents panel_distribuie As Global.System.Web.UI.WebControls.Panel
+    
+    '''<summary>
+    '''Control mesaj_sfarsit.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents mesaj_sfarsit As Global.System.Web.UI.WebControls.Label
 End Class

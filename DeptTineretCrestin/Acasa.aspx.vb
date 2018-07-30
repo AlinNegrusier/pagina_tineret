@@ -46,11 +46,11 @@ Public Class Acasa
         For Each item In lista_articulos_ordenados
             Dim li As HtmlGenericControl = Crear_Elemento("li")
             Dim a As HtmlGenericControl = Crear_Elemento("a",,, "#0")
-            a.Attributes.Add("data-date", item.FECHA.ToString("MM/dd/yyyy"))
+            a.Attributes.Add("data-date", item.FECHA.ToString("dd/MM/yyyy"))
             If item Is lista_articulos_ordenados.Last Then
                 a.Attributes.Add("class", "selected")
             End If
-            a.InnerText = Fecha_Rumano(item.FECHA.ToString("MM/dd/yyyy"))
+            a.InnerText = Fecha_Rumano(item.FECHA.ToString("dd/MM/yyyy"))
             li.Controls.Add(a)
             ol.Controls.Add(li)
         Next
@@ -107,12 +107,12 @@ Public Class Acasa
             Else
                 li = Crear_Elemento("li")
             End If
-            li.Attributes.Add("data-date", item.FECHA.ToString("MM/dd/yyyy"))
+            li.Attributes.Add("data-date", item.FECHA.ToString("dd/MM/yyyy"))
             Dim titulo As HtmlGenericControl = Crear_Elemento("h2")
             titulo.InnerText = item.TITULO
 
             Dim fecha_subtitulo As HtmlGenericControl = Crear_Elemento("em")
-            fecha_subtitulo.InnerText = Fecha_Rumano(item.FECHA.ToString("MM/dd/yyyy"))
+            fecha_subtitulo.InnerText = Fecha_Rumano(item.FECHA.ToString("dd/MM/yyyy"))
 
             Dim descripcion As HtmlGenericControl = Crear_Elemento("p")
             descripcion.InnerHtml = item.DESCRIPCION & "<div class='row'>
