@@ -38,8 +38,8 @@ Public Class Articole
                     articulo.DESCRIPCION = atributos("DESCRIPCION")
                     articulo.CONTENIDO = atributos("CONTENIDO")
                     articulo.TIPO_ARTICULO = atributos("TIPO_ARTICULO")
-                    articulo.FECHA = Convert.ToDateTime(atributos("FECHA"))
-                    articulo.FECHA_REDACCION = Convert.ToDateTime(atributos("FECHA_REDACCION"))
+                    articulo.FECHA = Convert.ToDateTime(atributos("FECHA").ToString)
+                    articulo.FECHA_REDACCION = Convert.ToDateTime(atributos("FECHA_REDACCION").ToString)
                     articulo.AUTOR = atributos("AUTOR")
                 End If
             Next

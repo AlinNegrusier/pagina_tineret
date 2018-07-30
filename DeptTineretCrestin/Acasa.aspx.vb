@@ -34,7 +34,7 @@ Public Class Acasa
                 articulo.DESCRIPCION = atributos("DESCRIPCION")
                 articulo.CONTENIDO = atributos("CONTENIDO")
                 articulo.TIPO_ARTICULO = atributos("TIPO_ARTICULO")
-                articulo.FECHA = Convert.ToDateTime(atributos("FECHA"))
+                articulo.FECHA = Convert.ToDateTime(atributos("FECHA").ToString)
                 lista_articulos.Add(articulo)
             Next
 
@@ -91,7 +91,7 @@ Public Class Acasa
                 articulo.DESCRIPCION = atributos("DESCRIPCION")
                 articulo.CONTENIDO = atributos("CONTENIDO")
                 articulo.TIPO_ARTICULO = atributos("TIPO_ARTICULO")
-                articulo.FECHA = Convert.ToDateTime(atributos("FECHA"))
+                articulo.FECHA = Convert.ToDateTime(atributos("FECHA").ToString)
                 lista_articulos.Add(articulo)
             Next
 
