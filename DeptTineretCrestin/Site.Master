@@ -18,16 +18,31 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="Scripts/jquery.mobile.custom.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    
+    
     <script src="Scripts/modernizr.js"></script>
+     
+    <!--<script src="Scripts/jquery-1.10.2.js"></script>-->
+    <script src="Scripts/main.js"></script>
     <script>
 
-        //$('document').ready(function () {
-        //    mostrarModalCargando();
-        //});
+        $('document').ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 100) {
+                    
+                    $(".menu_master").addClass("menu_transparente");
+                } else {
+                    $(".menu_master").removeClass("menu_transparente");                    
+                }
+            });
+        });
 
-        //function mostrarModalCargando() {
-        //    $('#ModalCargando').modal('show');
-        //}
+        function mostrarModalCargando() {
+            $('#ModalCargando').modal('show');
+        }
         
 
     </script>
@@ -56,8 +71,8 @@
         </asp:ScriptManager>
 
 
-        <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-            <a class="navbar-brand" href="Acasa">
+        <nav class="navbar navbar-expand-lg navbar-custom sticky-top menu menu_master">
+            <a class="navbar-brand" href="Acasa" onclick="mostrarModalCargando();">
                 <img src="Img/logo.png" width="80" height="35" alt="Logo">
               </a>
 
@@ -145,7 +160,7 @@
       <div class="modal-body">
         <div class="row">
             <div class='box-flex fullheight fullwidth d-block text-center'> 
-                <img width="350" height="200" src="Img/loading.gif" />
+                <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
                 </div>
         </div>
       </div>
@@ -154,10 +169,6 @@
     </div>
   </div>
 </div>
-     <script src="Scripts/bootstrap.js"></script>
-    <!--<script src="Scripts/jquery-1.10.2.js"></script>-->
-    <script src="Scripts/jquery-2.1.4.js"></script>
-    <script src="Scripts/jquery.mobile.custom.min.js"></script>
-    <script src="Scripts/main.js"></script>
+    
 </body>
 </html>

@@ -57,6 +57,7 @@ Public Class SiteMaster
                             a_subitem = Crear_Elemento("a",, "dropdown-item", subitem("REDIRECCION"))
                         End If
 
+                        a_subitem.Attributes.Add("onclick", "mostrarModalCargando();")
                         a_subitem.InnerText = subitem("NOMBRE_WEB")
                         div.Controls.Add(a_subitem)
                     Next
@@ -76,6 +77,7 @@ Public Class SiteMaster
                     Dim a As HtmlGenericControl = Crear_Elemento("a",, "nav-link")
                     a.Attributes.Add("href", atributos("REDIRECCION"))
                     a.InnerText = atributos("NOMBRE_WEB")
+                    a.Attributes.Add("onclick", "mostrarModalCargando();")
                     li.Controls.Add(a)
                     ul.Controls.Add(li)
                 End If

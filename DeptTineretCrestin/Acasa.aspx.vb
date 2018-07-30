@@ -117,7 +117,7 @@ Public Class Acasa
             Dim descripcion As HtmlGenericControl = Crear_Elemento("p")
             descripcion.InnerHtml = item.DESCRIPCION & "<div class='row'>
             <div class='box-flex fullheight fullwidth d-table text-center'> 
-                <a class='btn btn-outline-morado my-2 my-sm-0 boton_leer_mas' href='Articole.aspx?id=" & item.ID & "'>Citeşte mai mult</a>
+                <a class='btn btn-outline-morado my-2 my-sm-0 boton_leer_mas' onclick='mostrarModalCargando();' href='Articole.aspx?id=" & item.ID & "'>Citeşte mai mult</a>
             </div>
         </div>"
 
