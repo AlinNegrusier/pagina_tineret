@@ -1,0 +1,29 @@
+{
+"CONTACT1":{
+	"ID":"1",
+	"NOMBRE":"Negrușier Pavel",
+	"FOTO": "https://i.imgur.com/Aar6u8z.jpg",
+	"DESCRIPCION":"DESCRIPCION PAVEL - This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.",
+	"EMAIL": "pavelnegrusier@gmail.com",
+	"TELEFONO": "642 775 495",
+	"FACEBOOK": "https://www.facebook.com/pavel.negrusier"
+},
+"CONTACT2":{
+	"ID":"2",
+	"NOMBRE":"Darius Neag",
+	"FOTO": "https://scontent.fmad7-1.fna.fbcdn.net/v/t1.0-9/13342876_1637145139939860_990264728305346769_n.jpg?_nc_cat=0&oh=4953fb9bd0f9f2847943c0a316bdf1a1&oe=5C0B5907",
+	"DESCRIPCION":"DESCRIPCION DARIUS - This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.",
+	"EMAIL": "dariusneag@gmail.com",
+	"TELEFONO": "655 775 495",
+	"FACEBOOK": "https://www.facebook.com/profile.php?id=100009331708050"
+},
+"CONTACT3":{
+	"ID":"3",
+	"NOMBRE":"Marian Cut",
+	"FOTO": "https://i.imgur.com/Aar6u8z.jpg",
+	"DESCRIPCION":"DESCRIPCION MARIAN - This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.",
+	"EMAIL": "mariancut@gmail.com",
+	"TELEFONO": "677 775 495",
+	"FACEBOOK": "https://www.facebook.com/profile.php?id=100009331708050"
+}   
+}
