@@ -6,7 +6,8 @@
 	"DESCRIPCION":"DESCRIPCION PAVEL - This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.",
 	"EMAIL": "pavelnegrusier@gmail.com",
 	"TELEFONO": "642 775 495",
-	"FACEBOOK": "https://www.facebook.com/pavel.negrusier"
+	"FACEBOOK": "https://www.facebook.com/pavel.negrusier",
+	"ORDEN": "1"
 },
 "CONTACT2":{
 	"ID":"2",
@@ -15,7 +16,8 @@
 	"DESCRIPCION":"DESCRIPCION DARIUS - This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.",
 	"EMAIL": "dariusneag@gmail.com",
 	"TELEFONO": "655 775 495",
-	"FACEBOOK": "https://www.facebook.com/profile.php?id=100009331708050"
+	"FACEBOOK": "https://www.facebook.com/profile.php?id=100009331708050",
+	"ORDEN": "2"
 },
 "CONTACT3":{
 	"ID":"3",
@@ -24,6 +26,7 @@
 	"DESCRIPCION":"DESCRIPCION MARIAN - This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.",
 	"EMAIL": "mariancut@gmail.com",
 	"TELEFONO": "677 775 495",
-	"FACEBOOK": "https://www.facebook.com/profile.php?id=100009331708050"
+	"FACEBOOK": "https://www.facebook.com/profile.php?id=100009331708050",
+	"ORDEN": "3"
 }   
 }

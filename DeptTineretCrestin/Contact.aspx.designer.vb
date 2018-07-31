@@ -21,4 +21,13 @@ Partial Public Class Contact
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents titulo_articulo As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control contactos.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents contactos As Global.System.Web.UI.WebControls.Literal
 End Class

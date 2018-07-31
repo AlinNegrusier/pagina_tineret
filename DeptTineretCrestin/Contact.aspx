@@ -12,8 +12,10 @@
 <div id="team" class="pb-5">
     <div class="container">
         <div class="row">
+            <asp:Literal runat="server" ID="contactos"></asp:Literal>
+
             <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
+           <%-- <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" >
                     <div class="mainflip flip-0">
                         <div class="frontside">
@@ -46,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>--%>
             <!-- ./Team member -->
             
         </div>
