@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Acasa.aspx" />
+    <Content Include="Cauta.aspx" />
     <Content Include="Articole.aspx" />
     <Content Include="Content\fontawesome.css" />
     <Content Include="Despre.aspx" />
@@ -223,6 +224,13 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Cauta.aspx.designer.vb">
+      <DependentUpon>Cauta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cauta.aspx.vb">
+      <DependentUpon>Cauta.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Articole.aspx.designer.vb">
       <DependentUpon>Articole.aspx</DependentUpon>
     </Compile>
