@@ -231,6 +231,7 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Clases\articulo.vb" />
+    <Compile Include="Clases\contacto.vb" />
     <Compile Include="Despre.aspx.designer.vb">
       <DependentUpon>Despre.aspx</DependentUpon>
     </Compile>
