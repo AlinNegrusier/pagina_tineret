@@ -2,6 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
             <div class="col justify-content-center">
+                <div class="fullwidth">
+                    <img src="Img/cabecera_articulo.png" class="cabecera_articulo" />
+                 </div>
                 <h1 class="titlu text-center"><i>Live</i></h1>
             </div>
         </div>
@@ -12,9 +15,16 @@
             </div>
         </asp:Panel>
 
-    <div class="row fullheight fullwidth" style="margin-bottom: 20px;">
-        <div class="col justify-content-center">
+    
+
     <asp:Literal runat="server" ID="panel_video"></asp:Literal>
+            
+     <div class="row">
+            <div class="box-flex fullwidth">
+                
+                <div class="fullwidth">
+                    <img src="Img/pie_articulo.png" class="cabecera_articulo" />
+                 </div>
             </div>
         </div>
     <script>

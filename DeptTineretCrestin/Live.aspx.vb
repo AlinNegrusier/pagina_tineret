@@ -45,7 +45,7 @@ Public Class Live
             panel_video.Text = "<div class='video_responsive'><iframe src='" & URL & "' width='560' height='314' allowfullscreen='allowfullscreen'></iframe></div>"
         Else
             panel_subtitlu.Visible = False
-            panel_video.Text = "<h3 class='titlu'>Ne cerem scuze dar înca nu a fost stabilită data următoarei tranmisii!</h3>"
+            panel_video.Text = "<br/><h1 class='subtitlu'>Ne cerem scuze dar înca nu a fost stabilită data următoarei transmisii!</h1>"
         End If
 
     End Sub
