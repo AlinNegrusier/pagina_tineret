@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
             <div class="col justify-content-center">
-                <div class="fullwidth">
+                <div class="fullwidth text-center">
                     <img src="Img/cabecera_articulo.png" class="cabecera_articulo" />
                  </div>
                 <h1 class="titlu text-center"><i>Live</i></h1>
@@ -62,6 +62,6 @@
             }, 1000);
         }
 
-       
+
 </script>
 </asp:Content>
