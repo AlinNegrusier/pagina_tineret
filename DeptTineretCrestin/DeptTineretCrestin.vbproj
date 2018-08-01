@@ -159,7 +159,6 @@
     <Content Include="Despre.aspx" />
     <Content Include="Img\cabecera_articulo.png" />
     <Content Include="Img\camera.jpg" />
-    <Content Include="Img\camera_movil.jpg" />
     <Content Include="Img\cd-arrow.svg" />
     <Content Include="Img\fondo_editado.jpg" />
     <Content Include="Img\fondo_editado_morado.jpg" />
@@ -182,7 +181,6 @@
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Img\reloj.jpg" />
-    <Content Include="Img\reloj_movil.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\flipclock.js" />

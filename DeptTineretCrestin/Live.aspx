@@ -7,14 +7,18 @@
         </div>
      <asp:Panel runat="server" ID="panel_subtitlu" class="row">
             <div class="box-flex fullwidth text-left" style="padding: 5px 20px 5px 20px;"> 
-                <p class="subtitlu"><span class="descriptie_subtitlu">Timp până la urmatoarea transmisie: </span><span id="timp">01/02</span></p>
+                <p class="subtitlu"><span class="descriptie_subtitlu">Timp până la urmatoarea transmisie: </span><span id="timp"></span></p>
 
             </div>
         </asp:Panel>
 
+    <div class="row fullheight fullwidth" style="margin-bottom: 20px;">
+        <div class="col justify-content-center">
     <asp:Literal runat="server" ID="panel_video"></asp:Literal>
-
+            </div>
+        </div>
     <script>
+
 
         function InicializaContador(fecha) {
             // Set the date we're counting down to
@@ -43,7 +47,7 @@
                 // If the count down is finished, write some text 
                 if (distance < 0) {
                     clearInterval(x);
-                    document.getElementById("timp").innerHTML = "EXPIRED";
+                    document.getElementById("timp").innerHTML = "Se transmite acum!";
                 }
             }, 1000);
         }
