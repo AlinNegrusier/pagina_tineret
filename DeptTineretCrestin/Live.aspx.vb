@@ -3,7 +3,7 @@ Imports System.Net
 Imports Newtonsoft.Json
 Imports Newtonsoft.Json.Linq
 
-Public Class Cauta
+Public Class Live
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -44,8 +44,6 @@ Public Class Cauta
                 End If
             Next
         Next
-
-        Me.titulo_articulo.Text = articulo.TITULO
 
 
     End Sub

@@ -152,11 +152,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Acasa.aspx" />
-    <Content Include="Cauta.aspx" />
+    <Content Include="Content\flipclock.css" />
+    <Content Include="Live.aspx" />
     <Content Include="Articole.aspx" />
     <Content Include="Content\fontawesome.css" />
     <Content Include="Despre.aspx" />
     <Content Include="Img\cabecera_articulo.png" />
+    <Content Include="Img\camera.jpg" />
+    <Content Include="Img\camera_movil.jpg" />
     <Content Include="Img\cd-arrow.svg" />
     <Content Include="Img\fondo_editado.jpg" />
     <Content Include="Img\fondo_editado_morado.jpg" />
@@ -179,8 +182,10 @@
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Img\reloj.jpg" />
+    <Content Include="Img\reloj_movil.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\flipclock.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
@@ -224,11 +229,11 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
-    <Compile Include="Cauta.aspx.designer.vb">
-      <DependentUpon>Cauta.aspx</DependentUpon>
+    <Compile Include="Live.aspx.designer.vb">
+      <DependentUpon>Live.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Cauta.aspx.vb">
-      <DependentUpon>Cauta.aspx</DependentUpon>
+    <Compile Include="Live.aspx.vb">
+      <DependentUpon>Live.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Articole.aspx.designer.vb">

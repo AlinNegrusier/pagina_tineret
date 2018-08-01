@@ -211,8 +211,11 @@ footer {
         background-position: 50% -1px;
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 17.6%;
+        padding: 19%;
+        min-height: calc(100vh - 150px);
     }
+   
+
 
 html, body, .fullheight {
     min-height: 100% !important;
@@ -792,7 +795,7 @@ Main Components
 @media (min-width: 1300px) and (max-width: 1400px) {
     .cajaTimeline {
         background-image: url(../Img/reloj.jpg);
-        background-position: -45% 0px;
+        background-position: -48% 0px;
         background-repeat: no-repeat;
     }
 }
@@ -1098,3 +1101,155 @@ section {
             height: 120px;
             border-radius: 50%;
         }
+
+        /*ESTILOS LIVE*/
+.barra_separadora {
+    border-top: 1px solid #eaeaea;
+}
+
+.box-flex.live {
+    background-image: none;
+    min-height: 50vh !important;
+}
+
+
+@media (min-width: 728px)  {
+    .box-flex.live {
+        background-image: url(../Img/camera.jpg);
+        background-position: 55vw -10vw;
+        background-repeat: no-repeat;
+        min-height: 100vh !important;
+        background-size: contain;
+    }
+}
+
+    /*.box-flex.live {
+    background-image: none;
+    background-position: 225% -100px;
+    background-repeat: no-repeat;
+    padding: 19%;
+    min-height: calc(100vh - 150px);
+}
+
+@media (min-width: 1085px) and (max-width: 1100px) {
+    .box-flex.live {
+        background-image: url('../Img/camera.jpg');
+        background-position: 1300% -100px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1125px) {
+    .box-flex.live {
+        background-image: url('../Img/camera.jpg');
+        background-position: 1000% -100px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1125px) and (max-width: 1150px) {
+    .box-flex.live {
+        background-image: url('../Img/camera.jpg');
+        background-position: 700% -100px;
+        background-repeat: no-repeat;
+    }
+}
+@media (min-width: 1150px) and (max-width: 1195px) {
+    .box-flex.live {
+        background-image: url('../Img/camera.jpg');
+        background-position: 550% -100px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1195px) and (max-width: 1225px) {
+    .box-flex.live {
+        background-image: url('../Img/camera.jpg');
+        background-position: 400% -100px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1225px) and (max-width: 1300px) {
+    .box-flex.live {
+        background-image: url('../Img/camera.jpg');
+        background-position: 350% -100px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+    .box-flex.live {
+        background-image: url('../Img/camera.jpg');
+        background-position: 260% -100px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+    .box-flex.live {
+        background-image: url('../Img/camera.jpg');
+        background-position: 160% -100px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1700px) {
+    .box-flex.live {
+        background-image: url('../Img/camera.jpg');
+        background-position: 100% -100px;
+        background-repeat: no-repeat;
+    }
+}*/
+.parpadea {
+    animation-name: parpadeo;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}

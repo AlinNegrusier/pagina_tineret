@@ -1,47 +1,45 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Acasa.aspx.vb" Inherits="DeptTineretCrestin.Acasa" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="box-flex verset fullheight">
         <div class="row">
             <div class="col justify-content-center">
                 <h2><i>"…V-am scris, tinerilor, fiindcă sunteţi tari şi Cuvântul lui Dumnezeu rămâne în voi şi aţi biruit pe cel rău.”</i></h2>
             </div>
-            </div>
-        
+        </div>
+
         <div class="row">
             <div class="col justify-content-center">
                 <h3><span class="referinta">1 Ioan 2:14</span></h3>
             </div>
         </div>
-        </div>
-    <div class="box-flex fullheight" style="display:table;"> 
+    </div>
+    <div class="box-flex fullheight" style="display: table;">
         <div class="col justify-content-center mesaj_bunvenit mesaj_bunvenit_text">
-                 
-			Bine ai venit pe pagina oficiala al departamentului de tineret creştin penticostal, comunitatea Madrid!
+            Bine ai venit pe pagina oficiala al departamentului de tineret creştin penticostal, comunitatea Madrid!
 			
         </div>
     </div>
 
     <div class="box-flex fullheight cajaTimeline">
         <div class="row">
-            <div class="box-flex fullheight fullwidth"> 
+            <div class="box-flex fullheight fullwidth">
                 <h1 class="titlu">Ultimele Evenimente</h1>
             </div>
         </div>
 
-         <div class="row d-sm-none">
-            <div class="box-flex fullheight fullwidth"> 
+        <div class="row d-sm-none">
+            <div class="box-flex fullheight fullwidth">
                 <h6 class="titlu">(Glisați spre stânga sau dreapta)</h6>
             </div>
         </div>
-        
-<section class="cd-horizontal-timeline">
-	<div class="timeline">
-		<div class="events-wrapper">
-            <asp:Panel ID="lista_eventos_barra" runat="server" CssClass="events">
-				
 
-			</asp:Panel>
-			<%--<div class="events">
+        <section class="cd-horizontal-timeline">
+            <div class="timeline">
+                <div class="events-wrapper">
+                    <asp:Panel ID="lista_eventos_barra" runat="server" CssClass="events">
+                    </asp:Panel>
+                    <%--<div class="events">
 				<ol>
 					<li><a href="#0" data-date="16/01/2014">16 Jan</a></li>
 					<li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
@@ -52,22 +50,23 @@
 				</ol>
 
 				<span class="filling-line" aria-hidden="true"></span>
-			</div>--%> 
-            <!-- .events -->
-		</div> <!-- .events-wrapper -->
-			
-		<ul class="cd-timeline-navigation">
-			<li><a href="#0" class="prev inactive">Prev</a></li>
-			<li><a href="#0" class="next">Next</a></li>
-		</ul> <!-- .cd-timeline-navigation -->
-	</div> <!-- .timeline -->
+			</div>--%>
+                    <!-- .events -->
+                </div>
+                <!-- .events-wrapper -->
 
-    <asp:Panel runat="server" CssClass="events-content" ID="contenido_eventos">
+                <ul class="cd-timeline-navigation">
+                    <li><a href="#0" class="prev inactive">Prev</a></li>
+                    <li><a href="#0" class="next">Next</a></li>
+                </ul>
+                <!-- .cd-timeline-navigation -->
+            </div>
+            <!-- .timeline -->
 
+            <asp:Panel runat="server" CssClass="events-content" ID="contenido_eventos">
+            </asp:Panel>
 
-    </asp:Panel>
-
-	<%--<div class="events-content">
+            <%--<div class="events-content">
 		<ol>
 			<li data-date="16/01/2014">
 				<h2>Horizontal Timeline</h2>
@@ -112,12 +111,52 @@
 			
 		</ol>
 	</div> --%>
-    
-    <!-- .events-content -->
-</section>
-	
-        
+
+            <!-- .events-content -->
+        </section>
+
+
     </div>
 
-    
+    <div class="barra_separadora"></div>
+    <div class="box-flex live fullheight">
+        <div class="row">
+            <div class="col justify-content-center">
+                <h1 class="titlu"><i>Urmărește-ne Live</i></h1>
+            </div>
+        </div>
+
+        <div class="row parpadea">
+            <div class="col justify-content-center">
+
+                <i class="fas fa-video" style="color: #903749;"></i>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col justify-content-center">
+                <a class='btn btn-outline-morado my-2 my-sm-0' onclick='mostrarModalCargando();' href='Live.aspx'>LIVE</a>
+            </div>
+        </div>
+    </div>
+
+
+    <%-- <div class="one"> 
+
+        <div class="box-flex live fullheight">
+        <div class="row">
+            <div class="col justify-content-center">
+                <h2><i>Urmărește-ne Live</i></h2>
+            </div>
+            </div>
+        
+        <div class="row">
+            <div class="col justify-content-center">
+                 <a class='btn btn-outline-morado my-2 my-sm-0' onclick='mostrarModalCargando();' href='Live.aspx'>LIVE</a>
+            </div>
+        </div>
+        </div>
+
+    <video class="video-background" no-controls autoplay loop src="Img/live_background.mp4"></video>
+</div>--%>
 </asp:Content>
