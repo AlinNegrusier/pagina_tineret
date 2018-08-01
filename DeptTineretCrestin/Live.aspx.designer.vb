@@ -23,11 +23,11 @@ Partial Public Class Live
     Protected WithEvents panel_subtitlu As Global.System.Web.UI.WebControls.Panel
     
     '''<summary>
-    '''Control video.
+    '''Control panel_video.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents video As Global.System.Web.UI.WebControls.Literal
+    Protected WithEvents panel_video As Global.System.Web.UI.WebControls.Literal
 End Class
