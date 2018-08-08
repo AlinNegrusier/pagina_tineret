@@ -776,18 +776,18 @@ Main Components
 }
 
 
-@media (min-width: 1110px) and (max-width: 1185px) {
+@media (min-width: 1130px) and (max-width: 1195px) {
     .cajaTimeline {
         background-image: url(../Img/reloj.jpg);
-        background-position: -80% 0px;
+        background-position: -80% -35px;
         background-repeat: no-repeat;
     }
 }
 
-@media (min-width: 1185px) and (max-width: 1300px) {
+@media (min-width: 1195px) and (max-width: 1300px) {
     .cajaTimeline {
         background-image: url(../Img/reloj.jpg);
-        background-position: -62% 0px;
+        background-position: -67% -35px;
         background-repeat: no-repeat;
     }
 }
@@ -795,7 +795,7 @@ Main Components
 @media (min-width: 1300px) and (max-width: 1400px) {
     .cajaTimeline {
         background-image: url(../Img/reloj.jpg);
-        background-position: -48% 0px;
+        background-position: -48% -35px;
         background-repeat: no-repeat;
     }
 }
@@ -803,7 +803,7 @@ Main Components
 @media (min-width: 1400px) and (max-width: 1700px) {
     .cajaTimeline {
         background-image: url(../Img/reloj.jpg);
-        background-position: -35% 0px;
+        background-position: -35% -35px;
         background-repeat: no-repeat;
     }
 }
@@ -811,7 +811,7 @@ Main Components
 @media (min-width: 1700px) {
     .cajaTimeline {
         background-image: url(../Img/reloj.jpg);
-        background-position: -10% 0px;
+        background-position: -10% -35px;
         background-repeat: no-repeat;
     }
 }

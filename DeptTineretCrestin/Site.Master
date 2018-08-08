@@ -15,41 +15,15 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/flipclock.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="Scripts/jquery-2.1.4.js"></script>
-    <script src="Scripts/jquery.mobile.custom.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
     
-    <script src="Scripts/modernizr.js"></script>
-     
-    <!--<script src="Scripts/jquery-1.10.2.js"></script>-->
-    <script src="Scripts/main.js"></script>
-    <script>
-
-        $('document').ready(function () {
-            $(window).scroll(function () {
-                if ($(window).scrollTop() >= 100) {
-                    
-                    $(".menu_master").addClass("menu_transparente");
-                } else {
-                    $(".menu_master").removeClass("menu_transparente");                    
-                }
-            });
-        });
-
-        function mostrarModalCargando() {
-            $('#ModalCargando').modal('show');
-        }
-        
-
-    </script>
 </head>
 <body>
     <form runat="server">
-        <asp:ScriptManager runat="server">
+        <asp:ScriptManager runat="server" EnableCdn="true">
             <Scripts>
                 <%--Para obtener más información sobre la unión de scripts en ScriptManager, consulte https://go.microsoft.com/fwlink/?LinkID=301884 --%>
                 <%--Scripts de marco--%>
@@ -169,6 +143,33 @@
     </div>
   </div>
 </div>
+    <script src="Scripts/jquery-2.1.4.js"></script>
+    <script src="Scripts/jquery.mobile.custom.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    
+    <script src="Scripts/modernizr.js"></script>
+     
+    <!--<script src="Scripts/jquery-1.10.2.js"></script>-->
+    <script src="Scripts/main.js"></script>
+    <script>
+
+        $('document').ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 100) {
+
+                    $(".menu_master").addClass("menu_transparente");
+                } else {
+                    $(".menu_master").removeClass("menu_transparente");
+                }
+            });
+        });
+
+        function mostrarModalCargando() {
+            $('#ModalCargando').modal('show');
+        }
+
+
+    </script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b5f18766d3acef4"></script>
 </body>
 </html>

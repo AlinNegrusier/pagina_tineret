@@ -135,7 +135,13 @@ Public Class Acasa
 
     Function Fecha_Rumano(fecha As String) As String
         Dim fecha_texto As String = ""
-        Dim array_fecha = fecha.Split("/")
+        Dim array_fecha As String()
+        If fecha.Contains("/") Then
+            array_fecha = fecha.Split("/")
+        Else
+            array_fecha = fecha.Split(".")
+        End If
+
 
         Dim mes As String = ""
         Select Case array_fecha(1)
