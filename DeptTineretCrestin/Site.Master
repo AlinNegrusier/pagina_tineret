@@ -195,7 +195,7 @@
                 // If the count down is finished, write some text 
                 if (distance < 0) {
                     clearInterval(x);
-                    document.getElementById("timp").innerHTML = "Se transmite acum sau s-a transmis deja (dacă se transmite acum va aparea un mesaj în partea inferioara stangâ)!";
+                    document.getElementById("timp").innerHTML = "Se transmite acum sau s-a transmis deja (dacă se transmite acum va aparea un mesaj în partea inferioara stangâ după ce apăsați play)!";
                 }
             }, 1000);
         }
