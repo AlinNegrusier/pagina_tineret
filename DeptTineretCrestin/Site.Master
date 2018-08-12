@@ -190,7 +190,7 @@
 
                 // Display the result in the element with id="demo"
                 document.getElementById("timp").innerHTML = days + " zile " + hours + " ore "
-                    + minutes + " minute " + seconds + " secunde ";
+                    + minutes + " minute " + seconds + " secunde. Ultima transmisie: ";
 
                 // If the count down is finished, write some text 
                 if (distance < 0) {
