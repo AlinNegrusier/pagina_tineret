@@ -63,7 +63,7 @@ Public Class Live
 
     Private Function getjQueryCode(ByVal jsCodetoRun As String) As String
         Dim sb As New StringBuilder()
-        sb.AppendLine("$(document).ready(function() {")
+        sb.AppendLine("document.addEventListener('DOMContentLoaded', function(){")
         sb.AppendLine(jsCodetoRun)
         sb.AppendLine(" });")
 
